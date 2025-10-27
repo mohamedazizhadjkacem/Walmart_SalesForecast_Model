@@ -26,9 +26,9 @@ Example results table (fill with your numbers):
 
 Model | MAE | RMSE | R²
 ---|---:|---:|---:
-Linear Regression | <MAE> | <RMSE> | <R2>
-Random Forest | <MAE> | <RMSE> | <R2>
-XGBoost | <MAE> | <RMSE> | <R2>
+Linear Regression | 14561.46 | 21753.62 | 0.0925
+Random Forest | 1414.53 | 3697.53 | 0.9738
+XGBoost | 3560.44 | 6267.41 | 0.9247
 
 How to save or extract `results_df` from the notebook
 1. In the notebook, after evaluation (where `results_df` is defined), add and run this cell to save results:
