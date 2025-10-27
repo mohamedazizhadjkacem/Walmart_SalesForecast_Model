@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Notebook outputs (optional) - don't commit large outputs
+*.nbconvert.ipynb
+
+# Visual Studio Code workspace
+.vscode/
+
+# Mac files
+.DS_Store
+
+# Pickled models and data
+*.pkl
+*.h5
+
+# Windows
+Thumbs.db
+
+# Local environment variables
+.env
+
+# Large files
+# If your notebooks or datasets are large, consider using Git LFS for .ipynb or dataset files
