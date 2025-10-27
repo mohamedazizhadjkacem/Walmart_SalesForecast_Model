@@ -76,35 +76,7 @@ pip install pandas numpy scikit-learn xgboost lightgbm matplotlib seaborn plotly
 jupyter notebook "Walmart_SalesForecast_Model.ipynb"
 ```
 
-## Notes on keeping the repo clean
-- Clear notebook outputs before committing to reduce repo size and noise:
-
-```powershell
-jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace "Walmart_SalesForecast_Model.ipynb"
-```
-
-- Use `nbstripout` to automatically strip outputs on commit:
-
-```powershell
-pip install nbstripout
-nbstripout --install
-```
 
 ## Saved artifacts
 - `walmart_sales_model.pkl` — Pickled dict with keys: `model`, `feature_names`, `model_name` (if created by notebook).
 - `results_summary.csv` — (recommended) Saved metrics from the notebook for README inclusion.
-
-## Next steps (ideas)
-- Add a small script or CLI to load `walmart_sales_model.pkl` and predict from user-specified inputs.
-- Add unit tests for the prediction helper logic.
-- Add GitHub Actions workflow to run linting or a smoke test on notebook execution.
-
----
-
-If you'd like, I can:
-- (A) Open your notebook and auto-save `results_summary.csv` by injecting a small cell and running it here, or
-- (B) Create a `scripts/print_results.py` helper that loads `results_summary.csv` or the pickle and prints a formatted summary, or
-- (C) Fill in the Results table for you if you paste the `results_df` content (or `results_summary.csv`) here.
-
-Tell me which option you prefer and I'll implement it.
-
